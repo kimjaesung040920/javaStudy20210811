@@ -14,7 +14,7 @@ public static void main(String[] args) {
         for (int i = 0; i < 9; i++) {
 			 int i2 = i + 1;
          
-			 System.out.println(" X " + i2 + " = " + 2*i2);
+			 System.out.println(gugudan + " X " + i2 + " = " + 3*i2);
 		}
 		System.out.println();
 		
