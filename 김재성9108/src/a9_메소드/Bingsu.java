@@ -7,7 +7,7 @@ public class Bingsu {
 		return bingsu;
 	}
 	
-	void voidTest() {
+	void voidTest() { 
 		System.out.println("보이드 테스트 메소드");
 	}
 	
