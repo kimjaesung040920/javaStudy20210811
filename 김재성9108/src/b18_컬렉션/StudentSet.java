@@ -15,7 +15,6 @@ public class StudentSet {
 		
 		Iterator ir = sSet.iterator();
 		
-		
 		while(ir.hasNext()) {
 			System.out.println(ir.next());
 		}
