@@ -16,12 +16,13 @@ public class LoginTest {
 			String id = input.nextLine();
 		
 			System.out.println("비밀번호: ");
+			
 			String passsword = input.nextLine();
 			
 			int flag = loginDao.login(id, passsword);
 			
 			if(flag == 0) {
-				System.out.println("존재하지 않는 아디이 입니다.");
+				System.out.println("존재하지 않는 아이디 입니다.");
 			}else if(flag == 1) {
 				System.out.println("비밀번호가 틀렸습니다. 다시 시도해주세요.");
 			}else if(flag == 2) {
