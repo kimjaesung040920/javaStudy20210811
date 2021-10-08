@@ -15,7 +15,7 @@ public class LoginDaoImpl implements LoginDao{
 	}
 	
 	//로그인 로직
-	
+	@Override
 	public int login(String id, String password) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -25,9 +25,9 @@ public class LoginDaoImpl implements LoginDao{
 		
 		try {
 			con = pool.getConnection();
-			sql = "select count(um.user_id), count(ud.user_password) from"
-					+ "user_mst um"
-					+ "left outer join user_mst ud on (ud.user_id = um.user_id and ud.user_password = ?"
+			sql = "select count(um.user_id), count(ud.user_password) from "
+					+ "user_mst um "
+					+ "left outer join user_mst ud on (ud.user_id = um.user_id and ud.user_password = ?) "
 					+ "where um.user_id = ?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, password);

@@ -23,15 +23,12 @@ public class LoginServiceImpl implements LoginService{
 	@Override
 	public int loginTextCheck(String id, String pwd) {
 		int flag = 0;
-		
 		if(id.length() == 0) {
 			flag = 3;
 		}else if(pwd.length() == 0) {
 			flag = 4;
 		}else {
-			System.out.println("test");
 			flag = loginLogic(id, pwd);
-			System.out.println("test");
 		}
 		
 		return flag;
